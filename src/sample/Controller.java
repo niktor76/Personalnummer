@@ -18,7 +18,7 @@ public class Controller {
             lblAusgabe.setText("Eingabe zu lang.");
             return;
         }
-
+        //Test Git
         int jahr = Integer.parseInt(eingabe.substring(0, 2));
         int monat = Integer.parseInt(eingabe.substring(2, 4));
         String lfdNummer = eingabe.substring(4, 6);
