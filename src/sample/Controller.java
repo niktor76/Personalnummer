@@ -28,9 +28,11 @@ public class Controller {
         String monatsNamen[] = {"Januar", "Februar", "März", "April", "Mai", "Juni", "Juli",
                 "August", "September", "Oktober", "November", "Dezember"};
         int summe = 0;
+
         for (int i = 0; i < 6; i++) {
             summe += Character.getNumericValue(ziffern[i]) * gewichtung[i];
         }
+
         char pruefzeichen = pruefzeichenListe[23 - summe % 23];
         lblAusgabe.setText(monatsNamen[monat] + ", " + jahr + ", lfd. Nr.  "
                 + lfdNummer + ", Prüfzeichen: " + pruefzeichen);
